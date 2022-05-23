@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Be Vietnam">
+  
+  <title>Frontend Mentor | Manage landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+.body{font-size:16px;
+  font-family:Be Vietnam;
+}
+.mySlides {display:none;}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+  </style>
+</head>
+<body>
+<div class="w3-display-container">
+  <img class="" src="bg-tablet-pattern.svg" alt="" width="100%"/>
+  <div class="w3-bar w3-padding w3-display-topright">
+    <img class="w3-bar-item" src="logo.svg" alt="" />
+    <a class="w3-bar-item w3-button w3-hide-small" href="#">Pricing</a>
+    <a class="w3-bar-item w3-button w3-hide-small" href="#"> Product</a>
+    <a class="w3-bar-item w3-button w3-hide-small" href="#">About Us</a>
+    <a class="w3-bar-item w3-button w3-hide-small" href="#">Careers</a>
+    <a class="w3-bar-item w3-button w3-hide-small" href="#">Community</a>
+    <button class="w3-button w3-display-topright w3-hide-small w3-border w3-orange w3-round-large" type="submit"> Get Started</button>
+   <button class="w3-button w3-right w3-large" onclick="w3_open()">☰</button>
+  </div>
+</div>
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+ <a class="w3-bar-item w3-button" href="#">Pricing</a>
+    <a class="w3-bar-item w3-button " href="#"> Product</a>
+    <a class="w3-bar-item w3-button" href="#">About Us</a>
+    <a class="w3-bar-item w3-button " href="#">Careers</a>
+    <a class="w3-bar-item w3-button " href="#">Community</a>
+    <button class="w3-button w3-border w3-round-large" type="submit"> Get Started</button>
+    </div>
+  <div class="w3-row w3-padding-large w3-padding-top-64 w3-display-topright">
+    <div class="w3-half">
+      <h1 class=" w3-padding-large w3-padding-top-32 w3-text-blue-gray w3-wide">Bring everyone together to build better products.</h1>
+      <p>Manage makes it simple for software teams to plan day-to-day 
+  tasks while keeping the larger team goals in view.</p>
+   <button class="w3-button w3-border w3-red w3-round-large" type="submit"> Get Started</button>
+    </div>
+    <div class="w3-half">
+      <img class="w3-padding-large w3-padding-top-32" src="illustration-intro.svg" alt="" width="100%" />
+      
+    </div>
+    <div class="w3-row">
+      <div class="w3-half">
+        <h1 class="w3-text-blue-gray w3-padding-top-32 w3-wide">What’s different about Manage?</h1>
+
+ <p class="w3-padding-top-32"> Manage provides all the functionality your team needs, without 
+  the complexity. Our software is tailor-made for modern digital 
+  product teams. </p>
+      </div>
+      <div class="w3-half">
+       <p class="w3-padding"> <tag class="w3-border-large w3-red w3-wide w3-round-large w3-margin" type="submit" style="padding:2px 3px 1px 2px">01</tag>
+        Track company-wide progress
+  See how your day-to-day tasks fit into the wider vision. Go from 
+  tracking progress at the milestone level all the way done to the 
+  smallest of details. Never lose sight of the bigger picture again.</p> 
+    <p class="w3-padding"> <tag class="w3-border-large w3-red w3-wide w3-round-large w3-margin" type="submit" style="padding:2px 3px 1px 2px">02</tag>Advanced built-in reports
+  Set internal delivery estimates and track progress toward company 
+  goals. Our customisable dashboard helps you build out the reports 
+  you need to keep key stakeholders informed.
+     </p> 
+       <p class="w3-padding"> <tag class="w3-border-large w3-red w3-wide w3-round-large w3-margin" type="submit" style="padding:2px 3px 1px 2px">03</tag>  Everything you need in one place
+  Stop jumping from one service to another to communicate, store files, 
+  track tasks and share documents. Manage offers an all-in-one team 
+  productivity solution.
+     </p> 
+     
+      </div>
+    </div>
+    <h1 class="w3-padding w3-padding-large w3-text-blue-gray w3-center"> What they’ve said</h1>
+    <div class="w3-row-padding w3-hide-small">
+      <div class="w3-third "> 
+      <div class="w3-light-grey w3-center">
+        <img class="" src="avatar-anisha.png" alt="" width="20%"/>
+        
+        <h3 class=" ">Anisha Li</h3>
+        <p>  “Manage has supercharged our team’s workflow. The ability to maintain 
+  visibility on larger milestones at all times keeps everyone motivated.”</p>
+  </div>
+      </div>
+      <div class="w3-third">
+          <div class="w3-light-grey w3-center">
+        <img class="" src="avatar-ali.png" alt="" width="20%" />
+        
+        <h3 class="">Ali Bravo</h3>
+        <p> “We have been able to cancel so many other subscriptions since using 
+  Manage. There is no more cross-channel confusion and everyone is much 
+  more focused.”</p>
+  </div>
+      </div>
+      <div class="w3-third">
+          <div class="w3-light-grey w3-center">
+        <img class=" w3-center" src="avatar-richard.png" alt="" width="20%"/>
+        <h3 class="">Richard Watts</h3>
+        <p>
+  “Manage allows us to provide structure and process. It keeps us organized 
+  and focused. I can’t stop recommending them to everyone I talk to!”</p>
+      </div>
+      </div>
+      </div>
+<div class="w3-content w3-center w3-hide-large w3-hide-medium w3-display-container" style="max-width:800px">
+<div class="mySlides w3-grey">
+  <img class="" src="avatar-anisha.png" style="width:20%">
+ <h3 class=" ">Anisha Li</h3>
+        <p>  “Manage has supercharged our team’s workflow. The ability to maintain 
+  visibility on larger milestones at all times keeps everyone motivated.”</p>
+</div>
+<div class="mySlides w3-grey">
+  <img class="" src="avatar-richard.png" style="width:20%">
+ <h3 class="">Richard Watts</h3>
+        <p>
+  “Manage allows us to provide structure and process. It keeps us organized 
+  and focused. I can’t stop recommending them to everyone I talk to!”</p>
+</div>
+<div class="mySlides w3-gray">
+  <img class="" src="avatar-ali.png" style="width:20%">
+ <h3 class="">Ali Bravo</h3>
+        <p> “We have been able to cancel so many other subscriptions since using 
+  Manage. There is no more cross-channel confusion and everyone is much 
+  more focused.”</p>
+</div>
+<div class="mySlides w3-gray">
+  <img class="" src="avatar-shanai.png" style="width:20%">
+  <h3 class=" ">Shanai Gough</h3>
+        <p>  “Their software allows us to track, manage and collaborate on our projects 
+  from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+</div>
+  <div class="w3-center w3-section w3-large w3-text-black w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-orange" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-orange" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-orange" onclick="currentDiv(3)"></span>
+     <span class="w3-badge demo w3-border w3-transparent w3-hover-orange" onclick="currentDiv(4)"></span>
+  </div>
+  
+  </div>
+     <button class="w3-button w3-center w3-red w3-round-large"type="submit">Get Started</button>
+     
+  <div class="w3-red w3-padding-top-32 w3-padding-large w3-container w3-center w3-row ">
+   <div class="w3-half">
+     <h1 class="w3-padding">
+  Simplify how your team works today.
+  Get Started</h1>
+   </div>
+   <div class="w3-half">
+     <button class="w3-white w3-round-large w3-border w3-center" type="submit">Get Started</button>
+   </div>
+  </div>
+  <div class="w3-row w3-padding-top-64 w3-padding-large" style="background-color:#242D52;">
+    <div class="w3-third">
+      <img class="" src="logo3.svg" alt="" />
+   <h2 class="w3-button">
+     
+   <i class="fa fa-facebook-official w3-text-white  w3-hover-text-red"></i>
+    <i class="fa fa-instagram w3-text-white w3-hover-text-red"></i>
+    <i class="fa fa-snapchat w3-text-white w3-hover-text-red"></i>
+    <i class="fa fa-pinterest-p w3-text-white w3-hover-text-red"></i>
+    <i class="fa fa-twitter w3-text-white w3-hover-text-red"></i>
+    <i class="fa fa-linkedin w3-text-white w3-hover-text-red"></i> </h2>
+    </div>
+   
+    <div class="w3-third w3-text-white">
+   <a class=" w3-button" href="#">Home</a>   
+  <a class="w3-button" href="#">Pricing</a>
+  <a class="w3-button" href="#">Products</a>
+  <a class="w3-button" href="#">About Us</a>
+  <a class="w3-button" href="#">Careers</a>
+  <a class="w3-button" href="#">Community</a>
+  <a class="w3-button" href="#">Privacy policy</a>
+  
+    </div>
+     <div class="w3-third">
+      
+      <input class="w3-border w3-round-large" type="" name="" id="" value="Updates in your inbox…" />
+  <span class="w3-button w3-border w3-round-xxlarge w3-red">Go</span>
+
+ <p class="w3-text-white w3-min-opacity">Copyright 2020. All Rights Reserved</p>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jamal</a>.
+  </div>
+  </div>
+  </div>
+  <script type="text/javascript" charset="utf-8">
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+  </script>
+</body>
+</html>
